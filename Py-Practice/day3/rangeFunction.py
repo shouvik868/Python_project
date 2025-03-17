@@ -1,0 +1,10 @@
+print('==1===')
+print(list(range(10)))
+print('==2===')
+print(list(range(4,10)))
+print('==3===')
+print(list(range(1,12,2)))
+print('==4===')
+print(list(range(12,-1,-2)))
+print('===5===')
+print(range(1,12,2))#need a list to print range
