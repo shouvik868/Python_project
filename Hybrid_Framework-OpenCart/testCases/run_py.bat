@@ -1,1 +1,0 @@
-pytest -v -s --html=C:\Users\HP\PycharmProjects\seleniumProject\Hybrid_Framework-OpenCart\Reports\report.html C:\Users\HP\PycharmProjects\seleniumProject\Hybrid_Framework-OpenCart\testCases\Test001_LoginTest.py --browser chrome
