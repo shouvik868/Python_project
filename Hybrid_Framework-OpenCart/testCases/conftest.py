@@ -67,3 +67,16 @@ def pytest_configure(config):
 def pytest_metadata(metadata):
     metadata.pop("JAVA_HOME", None)
     metadata.pop("Plugins", None)
+    metadata.pop("BUILD_URL", None)
+    metadata.pop("NODE_NAME", None)
+    metadata.pop("JENKINS_URL", None)
+    metadata.pop("WORKSPACE", None)
+    metadata.pop("GIT_COMMIT", None)
+    metadata.pop("GIT_URL", None)
+    metadata.pop("GIT_BRANCH", None)
+
+
+
+
+
+
