@@ -1,2 +1,2 @@
-pytest -v -s -m sanity --html=C:\Users\HP\PycharmProjects\seleniumProject\Hybrid_Framework-OpenCart\Reports\report_sanity.html .\Hybrid_Framework-OpenCart\testCases\Test001_LoginTest.py --browser chrome
-pytest -v -s -m regression --html=C:\Users\HP\PycharmProjects\seleniumProject\Hybrid_Framework-OpenCart\Reports\report_regression.html .\Hybrid_Framework-OpenCart\testCases\Test001_LoginTest_DDT.py --browser firefox
+pytest -v --capture=tee-sys -m sanity --html=C:\Users\HP\PycharmProjects\seleniumProject\Hybrid_Framework-OpenCart\Reports\report_sanity.html .\Hybrid_Framework-OpenCart\testCases\Test001_LoginTest.py --browser chrome
+pytest -v --capture=tee-sys -m regression --html=C:\Users\HP\PycharmProjects\seleniumProject\Hybrid_Framework-OpenCart\Reports\report_regression.html .\Hybrid_Framework-OpenCart\testCases\Test001_LoginTest_DDT.py --browser firefox

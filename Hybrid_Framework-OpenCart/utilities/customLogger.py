@@ -10,8 +10,8 @@ def loggen():
         force = True
     )
     sh = logging.StreamHandler()
-    logger=logging.getLogger(__name__)
+    sh.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
+    logger=logging.getLogger()
     logger.addHandler(sh)
     #print(logger)
     return logger
-#loggen().info("okk")
