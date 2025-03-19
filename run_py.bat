@@ -1,1 +1,2 @@
-pytest -v -s --html=C:\Users\HP\PycharmProjects\seleniumProject\Hybrid_Framework-OpenCart\Reports\report.html .\Hybrid_Framework-OpenCart\testCases\Test001_LoginTest.py --browser chrome
+pytest -v -s -m sanity --html=C:\Users\HP\PycharmProjects\seleniumProject\Hybrid_Framework-OpenCart\Reports\report_sanity.html .\Hybrid_Framework-OpenCart\testCases\Test001_LoginTest.py --browser chrome
+pytest -v -s -m regression --html=C:\Users\HP\PycharmProjects\seleniumProject\Hybrid_Framework-OpenCart\Reports\report_regression.html .\Hybrid_Framework-OpenCart\testCases\Test001_LoginTest_DDT.py --browser firefox

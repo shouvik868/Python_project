@@ -12,7 +12,7 @@ from utilities import Random_Generator
 class TestRegistration:
     customLogger.loggen().info("hi o")
 
-    #@pytest.mark.sanity
+    @pytest.mark.sanity
     #@pytest.mark.regression
     def test_acc_registration(self,setup):
         customLogger.loggen().info("Welcome")

@@ -24,3 +24,8 @@ class ReadConfig:
     def getPassword():
         password = config.get("user credential", "password")
         return password
+
+    @staticmethod
+    def getInvalidUserEmail():
+        invalid_userName = config.get("user credential", "invalid_user")
+        return invalid_userName
