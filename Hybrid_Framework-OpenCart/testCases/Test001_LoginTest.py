@@ -17,7 +17,7 @@ class TestLogin:
 
     @pytest.mark.sanity
     def test_valid_login(self,setup):
-        customLogger.loggen().warning("in test_valid_login method")
+        customLogger.loggen().info("in test_valid_login method")
 
         self.driver=setup
         self.driver.get(ReadConfig.getAppURL())
@@ -63,7 +63,7 @@ class TestLogin:
 
     @pytest.mark.sanity
     def test_invalid_login(self, setup):
-        customLogger.loggen().warning("in test_invalid_login method")
+        customLogger.loggen().info("in test_invalid_login method")
 
         self.driver = setup
         self.driver.get(ReadConfig.getAppURL())
