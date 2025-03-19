@@ -11,14 +11,13 @@ sys.path.append("C:/Users/HP/PycharmProjects/seleniumProject/Hybrid_Framework-Op
 from utilities import customLogger
 
 
-customLogger.loggen().info("Welcome")
+customLogger.loggen().info("in Test001_LoginTest module ")
 class TestLogin:
-
+    customLogger.loggen().info("in TestLogin class ")
 
     @pytest.mark.sanity
     def test_valid_login(self,setup):
-        customLogger.loggen().warning("welcome all")
-        print("OK OK")
+        customLogger.loggen().warning("in test_valid_login method")
 
         self.driver=setup
         self.driver.get(ReadConfig.getAppURL())
@@ -64,8 +63,7 @@ class TestLogin:
 
     @pytest.mark.sanity
     def test_invalid_login(self, setup):
-        customLogger.loggen().warning("welcome all")
-        print("OK OK")
+        customLogger.loggen().warning("in test_invalid_login method")
 
         self.driver = setup
         self.driver.get(ReadConfig.getAppURL())

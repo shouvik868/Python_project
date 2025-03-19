@@ -9,19 +9,18 @@ from PageObjects.HomePage import Homepage
 from PageObjects.LoginPage import Loginpage
 from selenium.webdriver.common.by import By
 from utilities.readProperties import ReadConfig
-#from utilities.customLogger import LogGenerator
+sys.path.append("C:/Users/HP/PycharmProjects/seleniumProject/Hybrid_Framework-OpenCart")
+from utilities import customLogger
 from utilities import XLUtils
 
 
 class TestLogin_ddt_02:
-
+    customLogger.loggen().info("in TestLogin_ddt_02 class ")
     data_path="C:/Users/HP/PycharmProjects/seleniumProject/Hybrid_Framework-OpenCart/TestData/Opencart_login_data.xlsx"
-    #logger=LogGenerator.loggen()
-    #@pytest.mark.regression
     @pytest.mark.regression
     def test_valid_login_2(self,setup):
         #self.logger.info("Hii")
-        print("OK OK")
+        customLogger.loggen().warning("in test_valid_login_2 method")
         self.driver = setup
         self.driver.get(ReadConfig.getLoginURL())
 
@@ -59,8 +58,11 @@ class TestLogin_ddt_02:
             time.sleep(2)
             self.driver.find_element(By.XPATH, "//a[@class='btn btn-primary']").click()
             time.sleep(2)
-            self.driver.find_element(By.XPATH, "//span[contains(text(),'My Account')]").click()
+            self.hp = Homepage(self.driver)
+            self.hp.clickMyAcc()
+            #self.driver.find_element(By.XPATH, "//span[contains(text(),'My Account')]").click()
             time.sleep(2)
-            self.driver.find_element(By.XPATH, "//a[contains(text(),'Login')]").click()
+            self.hp.clickLoginB()
+            #self.driver.find_element(By.XPATH, "//a[contains(text(),'Login')]").click()
 
 

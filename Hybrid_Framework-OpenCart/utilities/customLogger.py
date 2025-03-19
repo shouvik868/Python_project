@@ -9,7 +9,9 @@ def loggen():
         datefmt='%m/%d/%Y %I:%M:%S %p',
         force = True
     )
+    sh = logging.StreamHandler()
     logger=logging.getLogger(__name__)
+    logger.addHandler(sh)
     #print(logger)
     return logger
 #loggen().info("okk")
